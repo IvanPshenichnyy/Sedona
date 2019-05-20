@@ -1,14 +1,17 @@
+*,*::before, *::after{
+	box-sizing: border-box;
+}
 body{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	
 	font-size: 14px;
 	line-height: 1.4;
 	font-family: oswald, sans-serif;
 }
 
 .container{
-	width: 1220px;
+	width: 1160px;
 	margin: 0 auto;
 }
 .main-header{
@@ -235,7 +238,10 @@ transform: skew(0deg, -8deg);}
 }
 .feedback .feedback-content{
  text-transform: uppercase;
- margin: 0 400px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
 
 }
 .feedback .feedback-content h2{
@@ -248,7 +254,7 @@ transform: skew(0deg, -8deg);}
 		width: 400px;
 }
 .feedback .feedback-content button{
- width: 100%;
+ width: 30%;
  padding: 15px;
  outline: none;
  border:  none;
